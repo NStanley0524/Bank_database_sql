@@ -1,0 +1,11 @@
+ID,Description_Type
+1,Savings Account: A basic account for storing money and earning interest. It's suitable for individuals looking to save money over time.
+2,"Student Account: Geared towards students, these accounts often have reduced fees and are designed to help students manage their finances during their educational years."
+3,"Online Banking Account: These accounts are primarily accessed online, offering the convenience of managing finances through digital channels."
+4,Health Savings Account (HSA): A tax-advantaged account used in conjunction with a high-deductible health insurance plan to save for medical expenses.
+5,"Business Account: Tailored for businesses, this type of account offers features like business check writing, merchant services, and various business-specific tools."
+6,"Certificate of Deposit (CD): A time-bound savings account with a fixed interest rate and maturity date. Funds are locked for a specified period, and withdrawing before maturity may result in penalties."
+7,Money Market Account: Similar to a savings account but often offers higher interest rates. It may require a higher minimum balance and provides limited check-writing privileges.
+8,"Checking Account: Also known as a current account, this is used for everyday transactions. It provides features like writing checks, making debit card transactions, and online bill payments."
+9,Trust Account: Managed by a trustee for the benefit of a beneficiary. These are often used for estate planning or managing assets for someone who can't do so themselves.
+10,Custodial Account: Managed by an adult on behalf of a minor or someone who is unable to manage their finances.

@@ -1,0 +1,62 @@
+CREATE DATABASE  IF NOT EXISTS `assignment_bank` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `assignment_bank`;
+-- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
+--
+-- Host: localhost    Database: assignment_bank
+-- ------------------------------------------------------
+-- Server version	8.0.32
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `clients`
+--
+
+DROP TABLE IF EXISTS `clients`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `clients` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `First_Name` varchar(20) DEFAULT NULL,
+  `Last_name` varchar(20) DEFAULT NULL,
+  `DOB` date DEFAULT NULL,
+  `Address` varchar(200) DEFAULT NULL,
+  `Age` int DEFAULT NULL,
+  `Sex` varchar(10) DEFAULT NULL,
+  `Created_Time` datetime DEFAULT NULL,
+  `Contact_no.` varchar(45) DEFAULT NULL,
+  `Work_no.` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  UNIQUE KEY `ID_UNIQUE` (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `clients`
+--
+
+LOCK TABLES `clients` WRITE;
+/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
+INSERT INTO `clients` VALUES (1,'ELLIS','KIRK','1949-06-06','Rutherford Ln, Smithville, TX 78957, Berlin',NULL,'F','2023-08-15 09:30:00','+49 151 2345 6789','+49 157 9876 5432'),(2,'BELINDA','JOHNSON','1996-01-14','Unnamed Road, Spearman, TX 79081, Munich',NULL,'M','2022-05-20 14:45:00','+49 163 8765 4321','+49 152 4567 8901'),(3,'JOELLE','BECK','1989-04-15','6121 Stan Roberts Sr Ave, TX 79934, Leipzig',NULL,'M','2021-11-10 18:15:00','+49 160 3456 7890','+49 155 6789 0123'),(4,'KEVIN','MCCABE','1988-09-20','Goethestraße 25, Munich, 80333',NULL,'F','2020-03-05 11:00:00','+49 154 8901 2345','+49 159 5678 9012'),(5,'SCOTTY','ARMOUR','1990-03-03','Ludwigstraße 10, Berlin, 10115',NULL,'F','2019-09-30 16:20:00','+49 158 4321 5678','+49 164 1234 5678'),(6,'SALLY','MITCHELL','1987-07-11','Am Markt 5, Hamburg, 20095',NULL,'F','2018-07-25 08:30:00','+49 163 8901 2345','+49 158 3456 7890'),(7,'JANET','SPEARS','1986-12-02','Schlossplatz 8, Stuttgart, 70173',NULL,'M','2017-02-15 12:45:00','+49 151 6789 0123','+49 172 1234 567'),(8,'JESSICA','RALPH','1985-06-28','Kaiserstraße 15, Frankfurt, 60311',NULL,'M','2016-11-01 20:10:00','+49 152 3456 7890','+49 173 2345 678'),(9,'TIMOTHY','HEAD','1984-11-17','Karl-Marx-Allee 50, Leipzig, 04107',NULL,'M','2015-04-10 15:25:00','+49 157 2345 6789','+49 174 3456 789'),(10,'DAVID','SMITH','1983-02-09','Schillerstraße 22, Bonn, 53113',NULL,'M','2016-05-03 22:00:00','+49 160 5678 9012','+49 175 4567 890'),(11,'Laura','Hoffmann','1982-05-24','Hauptstraße 7, Dresden, 01097',NULL,'F','2017-08-14 07:10:00','+49 159 4321 5678','+49 176 5678 901'),(12,'Dominik ',' Richter','1981-08-13','Augustinerstraße 4, Cologne, 50667',NULL,'M','2018-09-25 16:25:00','+49 155 9012 3456','+49 177 6789 012'),(13,'Sarah ','Schmidt','1980-10-30','Bahnhofstraße 9,Chemnitz , 45127',NULL,'F','2013-06-18 11:30:00','+49 154 6789 0123','+49 178 7890 123'),(14,' Alexander','Huber','1979-01-08','Friedrichstraße 101, Berlin, 10117',NULL,'M','2012-08-29 13:40:00','+49 164 5678 9012','+49 179 8901 234');
+/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-10-28 15:38:00

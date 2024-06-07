@@ -1,0 +1,6 @@
+ID,Transaction_type,Description,Transaction_fee
+1,ATM Withdrawal, Using an ATM to withdraw cash.,2
+2,Overdraft fees,IF your account balance goes below zero.,5
+3,ATM Deposit,"Adding funds to an account, often in the form of cash, checks, or electronic transfers.",1
+4,Transfer," Moving funds from one account to another, either within the same bank or between different banks.",1
+5,Balance Inquiry," Checking the available balance in an account, often done through ATM transactions or online banking.",0
